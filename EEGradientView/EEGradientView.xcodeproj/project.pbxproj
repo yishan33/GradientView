@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4710F0C2477827C00C9367D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F0B2477827C00C9367D /* AppDelegate.m */; };
+		F4710F0F2477827C00C9367D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F0E2477827C00C9367D /* SceneDelegate.m */; };
+		F4710F122477827C00C9367D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F112477827C00C9367D /* ViewController.m */; };
+		F4710F152477827C00C9367D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4710F132477827C00C9367D /* Main.storyboard */; };
+		F4710F172477827E00C9367D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4710F162477827E00C9367D /* Assets.xcassets */; };
+		F4710F1A2477827E00C9367D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4710F182477827E00C9367D /* LaunchScreen.storyboard */; };
+		F4710F1D2477827E00C9367D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F1C2477827E00C9367D /* main.m */; };
+		F4710F272477827E00C9367D /* EEGradientViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F262477827E00C9367D /* EEGradientViewTests.m */; };
+		F4710F322477827E00C9367D /* EEGradientViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F312477827E00C9367D /* EEGradientViewUITests.m */; };
+		F4710F41247782AD00C9367D /* EEGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F40247782AD00C9367D /* EEGradientView.m */; };
+		F4710F4424779FA200C9367D /* EEGradientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710F4324779FA200C9367D /* EEGradientHelper.m */; };
+		F4710FDE2478024100C9367D /* EEProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4710FDD2478024100C9367D /* EEProgressView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4710F232477827E00C9367D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4710EFF2477827C00C9367D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4710F062477827C00C9367D;
+			remoteInfo = EEGradientView;
+		};
+		F4710F2E2477827E00C9367D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4710EFF2477827C00C9367D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4710F062477827C00C9367D;
+			remoteInfo = EEGradientView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4710F072477827C00C9367D /* EEGradientView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEGradientView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4710F0A2477827C00C9367D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4710F0B2477827C00C9367D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4710F0D2477827C00C9367D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F4710F0E2477827C00C9367D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F4710F102477827C00C9367D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F4710F112477827C00C9367D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F4710F142477827C00C9367D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4710F162477827E00C9367D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4710F192477827E00C9367D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4710F1B2477827E00C9367D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4710F1C2477827E00C9367D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4710F222477827E00C9367D /* EEGradientViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEGradientViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4710F262477827E00C9367D /* EEGradientViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEGradientViewTests.m; sourceTree = "<group>"; };
+		F4710F282477827E00C9367D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4710F2D2477827E00C9367D /* EEGradientViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEGradientViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4710F312477827E00C9367D /* EEGradientViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEGradientViewUITests.m; sourceTree = "<group>"; };
+		F4710F332477827E00C9367D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4710F3F247782AD00C9367D /* EEGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEGradientView.h; sourceTree = "<group>"; };
+		F4710F40247782AD00C9367D /* EEGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEGradientView.m; sourceTree = "<group>"; };
+		F4710F4224779FA200C9367D /* EEGradientHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEGradientHelper.h; sourceTree = "<group>"; };
+		F4710F4324779FA200C9367D /* EEGradientHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEGradientHelper.m; sourceTree = "<group>"; };
+		F4710F4524779FCF00C9367D /* EEGradientDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEGradientDefine.h; sourceTree = "<group>"; };
+		F4710FDC2478024100C9367D /* EEProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEProgressView.h; sourceTree = "<group>"; };
+		F4710FDD2478024100C9367D /* EEProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEProgressView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4710F042477827C00C9367D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4710F1F2477827E00C9367D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4710F2A2477827E00C9367D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4710EFE2477827C00C9367D = {
+			isa = PBXGroup;
+			children = (
+				F4710F092477827C00C9367D /* EEGradientView */,
+				F4710F252477827E00C9367D /* EEGradientViewTests */,
+				F4710F302477827E00C9367D /* EEGradientViewUITests */,
+				F4710F082477827C00C9367D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4710F082477827C00C9367D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4710F072477827C00C9367D /* EEGradientView.app */,
+				F4710F222477827E00C9367D /* EEGradientViewTests.xctest */,
+				F4710F2D2477827E00C9367D /* EEGradientViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4710F092477827C00C9367D /* EEGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				F4710F8C2477CD8500C9367D /* Gradient */,
+				F4710F0A2477827C00C9367D /* AppDelegate.h */,
+				F4710F0B2477827C00C9367D /* AppDelegate.m */,
+				F4710F0D2477827C00C9367D /* SceneDelegate.h */,
+				F4710F0E2477827C00C9367D /* SceneDelegate.m */,
+				F4710F102477827C00C9367D /* ViewController.h */,
+				F4710F112477827C00C9367D /* ViewController.m */,
+				F4710F132477827C00C9367D /* Main.storyboard */,
+				F4710F162477827E00C9367D /* Assets.xcassets */,
+				F4710F182477827E00C9367D /* LaunchScreen.storyboard */,
+				F4710F1B2477827E00C9367D /* Info.plist */,
+				F4710F1C2477827E00C9367D /* main.m */,
+			);
+			path = EEGradientView;
+			sourceTree = "<group>";
+		};
+		F4710F252477827E00C9367D /* EEGradientViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4710F262477827E00C9367D /* EEGradientViewTests.m */,
+				F4710F282477827E00C9367D /* Info.plist */,
+			);
+			path = EEGradientViewTests;
+			sourceTree = "<group>";
+		};
+		F4710F302477827E00C9367D /* EEGradientViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4710F312477827E00C9367D /* EEGradientViewUITests.m */,
+				F4710F332477827E00C9367D /* Info.plist */,
+			);
+			path = EEGradientViewUITests;
+			sourceTree = "<group>";
+		};
+		F4710F8C2477CD8500C9367D /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				F4710F4524779FCF00C9367D /* EEGradientDefine.h */,
+				F4710F3F247782AD00C9367D /* EEGradientView.h */,
+				F4710F40247782AD00C9367D /* EEGradientView.m */,
+				F4710FDC2478024100C9367D /* EEProgressView.h */,
+				F4710FDD2478024100C9367D /* EEProgressView.m */,
+				F4710F4224779FA200C9367D /* EEGradientHelper.h */,
+				F4710F4324779FA200C9367D /* EEGradientHelper.m */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4710F062477827C00C9367D /* EEGradientView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4710F362477827E00C9367D /* Build configuration list for PBXNativeTarget "EEGradientView" */;
+			buildPhases = (
+				F4710F032477827C00C9367D /* Sources */,
+				F4710F042477827C00C9367D /* Frameworks */,
+				F4710F052477827C00C9367D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EEGradientView;
+			productName = EEGradientView;
+			productReference = F4710F072477827C00C9367D /* EEGradientView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4710F212477827E00C9367D /* EEGradientViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4710F392477827E00C9367D /* Build configuration list for PBXNativeTarget "EEGradientViewTests" */;
+			buildPhases = (
+				F4710F1E2477827E00C9367D /* Sources */,
+				F4710F1F2477827E00C9367D /* Frameworks */,
+				F4710F202477827E00C9367D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4710F242477827E00C9367D /* PBXTargetDependency */,
+			);
+			name = EEGradientViewTests;
+			productName = EEGradientViewTests;
+			productReference = F4710F222477827E00C9367D /* EEGradientViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4710F2C2477827E00C9367D /* EEGradientViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4710F3C2477827E00C9367D /* Build configuration list for PBXNativeTarget "EEGradientViewUITests" */;
+			buildPhases = (
+				F4710F292477827E00C9367D /* Sources */,
+				F4710F2A2477827E00C9367D /* Frameworks */,
+				F4710F2B2477827E00C9367D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4710F2F2477827E00C9367D /* PBXTargetDependency */,
+			);
+			name = EEGradientViewUITests;
+			productName = EEGradientViewUITests;
+			productReference = F4710F2D2477827E00C9367D /* EEGradientViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4710EFF2477827C00C9367D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "forthonliu(刘赋山)";
+				TargetAttributes = {
+					F4710F062477827C00C9367D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F4710F212477827E00C9367D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F4710F062477827C00C9367D;
+					};
+					F4710F2C2477827E00C9367D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F4710F062477827C00C9367D;
+					};
+				};
+			};
+			buildConfigurationList = F4710F022477827C00C9367D /* Build configuration list for PBXProject "EEGradientView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4710EFE2477827C00C9367D;
+			productRefGroup = F4710F082477827C00C9367D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4710F062477827C00C9367D /* EEGradientView */,
+				F4710F212477827E00C9367D /* EEGradientViewTests */,
+				F4710F2C2477827E00C9367D /* EEGradientViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4710F052477827C00C9367D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4710F1A2477827E00C9367D /* LaunchScreen.storyboard in Resources */,
+				F4710F172477827E00C9367D /* Assets.xcassets in Resources */,
+				F4710F152477827C00C9367D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4710F202477827E00C9367D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4710F2B2477827E00C9367D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4710F032477827C00C9367D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4710F122477827C00C9367D /* ViewController.m in Sources */,
+				F4710F4424779FA200C9367D /* EEGradientHelper.m in Sources */,
+				F4710F0C2477827C00C9367D /* AppDelegate.m in Sources */,
+				F4710F1D2477827E00C9367D /* main.m in Sources */,
+				F4710F41247782AD00C9367D /* EEGradientView.m in Sources */,
+				F4710F0F2477827C00C9367D /* SceneDelegate.m in Sources */,
+				F4710FDE2478024100C9367D /* EEProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4710F1E2477827E00C9367D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4710F272477827E00C9367D /* EEGradientViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4710F292477827E00C9367D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4710F322477827E00C9367D /* EEGradientViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4710F242477827E00C9367D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4710F062477827C00C9367D /* EEGradientView */;
+			targetProxy = F4710F232477827E00C9367D /* PBXContainerItemProxy */;
+		};
+		F4710F2F2477827E00C9367D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4710F062477827C00C9367D /* EEGradientView */;
+			targetProxy = F4710F2E2477827E00C9367D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4710F132477827C00C9367D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4710F142477827C00C9367D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4710F182477827E00C9367D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4710F192477827E00C9367D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4710F342477827E00C9367D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4710F352477827E00C9367D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4710F372477827E00C9367D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EEGradientView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ee.forthonliu.EEGradientView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4710F382477827E00C9367D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EEGradientView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ee.forthonliu.EEGradientView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4710F3A2477827E00C9367D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EEGradientViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ee.forthonliu.EEGradientViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEGradientView.app/EEGradientView";
+			};
+			name = Debug;
+		};
+		F4710F3B2477827E00C9367D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EEGradientViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ee.forthonliu.EEGradientViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEGradientView.app/EEGradientView";
+			};
+			name = Release;
+		};
+		F4710F3D2477827E00C9367D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EEGradientViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ee.forthonliu.EEGradientViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EEGradientView;
+			};
+			name = Debug;
+		};
+		F4710F3E2477827E00C9367D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EEGradientViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ee.forthonliu.EEGradientViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EEGradientView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4710F022477827C00C9367D /* Build configuration list for PBXProject "EEGradientView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4710F342477827E00C9367D /* Debug */,
+				F4710F352477827E00C9367D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4710F362477827E00C9367D /* Build configuration list for PBXNativeTarget "EEGradientView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4710F372477827E00C9367D /* Debug */,
+				F4710F382477827E00C9367D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4710F392477827E00C9367D /* Build configuration list for PBXNativeTarget "EEGradientViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4710F3A2477827E00C9367D /* Debug */,
+				F4710F3B2477827E00C9367D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4710F3C2477827E00C9367D /* Build configuration list for PBXNativeTarget "EEGradientViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4710F3D2477827E00C9367D /* Debug */,
+				F4710F3E2477827E00C9367D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4710EFF2477827C00C9367D /* Project object */;
+}
