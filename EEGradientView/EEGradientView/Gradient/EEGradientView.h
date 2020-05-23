@@ -45,9 +45,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
 @interface  EEGradientLabel : UIView <EEGradientProtocol>
 
 @property (nonatomic, strong, readonly) UILabel *label;
+
+/// AutoLayout布局时需设置
+@property (nonatomic, assign) CGSize contentSize;
 
 - (void)setTextGradientColors:(NSArray <UIColor *>*)colors
                     direction:(EEGradientDirection)direction;

@@ -160,7 +160,8 @@
                     locations:(NSArray <NSNumber *>*)locations
 {
     [self.layer addSublayer:self.textGradientLayer];
-    self.textGradientLayer.frame = self.bounds;
+    CGRect bounds = CGRectIsEmpty(self.bounds) ? CGRectMake(0, 0, self.contentSize.width, self.contentSize.height) : self.bounds;
+    self.textGradientLayer.frame = bounds;
     self.textGradientLayer.startPoint = startPoint;
     self.textGradientLayer.endPoint = endPoint;
     self.textGradientLayer.colors = [EEGradientHelper gradientColorArrayWithColorArray:colors];;

@@ -27,7 +27,7 @@
     NSArray *colorsArray = @[UIColor.blackColor, UIColor.whiteColor];
     EEGradientLabel *bossView = [[EEGradientLabel alloc] initWithColors:colorsArray
                                                               direction:EEGradientDirectionDown];
-    bossView.frame = CGRectMake(100, 100, 180, 50);
+    bossView.contentSize = CGSizeMake(180, 50);
     bossView.layer.cornerRadius = 5.0f;
     bossView.clipsToBounds = YES;
     [self.view addSubview:bossView];
@@ -38,6 +38,8 @@
         
     NSArray *gradientColorsArray = @[UIColor.blueColor, UIColor.redColor];
     [bossView setTextGradientColors:gradientColorsArray direction:EEGradientDirectionRight];
+    
+    bossView.frame = CGRectMake(100, 100, 180, 50);
 }
 
 //- (void)testGradient
