@@ -13,11 +13,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface EEProgressView : UIView
 
-@property (nonatomic, strong) EEGradientView *foreGradientView;
 @property (nonatomic, assign) CGSize contentSize;
 @property (nonatomic, assign) CGFloat progress;
-@property (nonatomic, strong) UIView *forePureView;
+@property (nonatomic, assign) CGFloat foreMaskCornerRadius;
 
+- (void)setForeGradientColors:(NSArray <UIColor *>*)colors
+                    direction:(EEGradientDirection)direction;
+
+- (void)setForeGradientColors:(NSArray <UIColor *>*)colors
+                    direction:(EEGradientDirection)direction
+                    locations:(NSArray <NSNumber *>*)locations;
+
+- (void)setForeGradientColors:(NSArray <UIColor *>*)colors
+                    starPoint:(CGPoint)startPoint
+                     endPoint:(CGPoint)endPoint;
+
+- (void)setForeGradientColors:(NSArray <UIColor *>*)colors
+                    starPoint:(CGPoint)startPoint
+                     endPoint:(CGPoint)endPoint
+                    locations:(NSArray <NSNumber *>*)locations;
+
+- (void)setForePureColor:(UIColor *)color;
 
 @end
 

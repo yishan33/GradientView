@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EEGradientView.h"
+#import "EEProgressView.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self testKit];
-//    [self testGradient];
+    [self testGradient];
 }
 
 - (void)testKit
@@ -44,21 +45,21 @@
     [bossView updateWithColors:@[UIColor.yellowColor, UIColor.blueColor] direction:EEGradientDirectionUp];
 }
 
-//- (void)testGradient
-//{
-//    YYChannelGradientLabel *myTestLabel = [[YYChannelGradientLabel alloc] init];
-//    [self.view addSubview:myTestLabel];
-//    myTestLabel.frame = CGRectMake(100, 100, 180, 50);
-//    
-//    myTestLabel.label.text = @"测试文案呀呀呀";
-//    myTestLabel.label.textColor = [UIColor redColor];
-//    myTestLabel.label.textAlignment = NSTextAlignmentCenter;
-//    
-//    NSArray *bgColorsArray = @[(id)UIColor.blackColor.CGColor, (id)UIColor.whiteColor.CGColor];
-//    [myTestLabel setGradientColors:bgColorsArray startPoint:CGPointMake(0, 0) endPoint:CGPointMake(0, 1)];
-//    
-//    NSArray *textColorsArray = @[(id)UIColor.blueColor.CGColor, (id)UIColor.redColor.CGColor];
-//    [myTestLabel setTextGradientColors:textColorsArray startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
-//}
+- (void)testGradient
+{
+    EEProgressView *myProgressView = [[EEProgressView alloc] init];
+    [self.view addSubview:myProgressView];
+    myProgressView.backgroundColor = [UIColor grayColor];
+    myProgressView.contentSize = CGSizeMake(180, 20);
+    
+    NSArray *textColorsArray = @[UIColor.blueColor, UIColor.redColor];
+    [myProgressView setForeGradientColors:textColorsArray direction:EEGradientDirectionRight];
+//    [myProgressView setForePureColor:UIColor.yellowColor];
+    myProgressView.progress = 0.8;
+//    myProgressView.foreMaskCornerRadius = 5;
+    myProgressView.layer.cornerRadius = 5;
+    myProgressView.clipsToBounds = YES;
+    myProgressView.frame = CGRectMake(100, 250, 180, 20);
+}
 
 @end

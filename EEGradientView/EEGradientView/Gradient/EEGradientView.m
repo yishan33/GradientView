@@ -27,6 +27,22 @@
                       endPoint:(CGPoint)endPoint
                      locations:(NSArray <NSNumber *>*)locations;
 
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               direction:(EEGradientDirection)direction;
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               direction:(EEGradientDirection)direction
+               locations:(NSArray <NSNumber *>*)locations;
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               starPoint:(CGPoint)startPoint
+                endPoint:(CGPoint)endPoint;
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               starPoint:(CGPoint)startPoint
+                endPoint:(CGPoint)endPoint
+               locations:(NSArray <NSNumber *>*)locations;
+
 @end
 
 @implementation UIView (Gradient)
@@ -67,6 +83,37 @@
     return [self initWithColors:colors direction:direction locations:@[]];
 }
 
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               direction:(EEGradientDirection)direction
+{
+    [self updateWithColors:colors direction:direction locations:@[]];
+}
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               direction:(EEGradientDirection)direction
+               locations:(NSArray <NSNumber *>*)locations
+{
+    NSArray <NSValue*>*pointArray = [EEGradientHelper startEndPointsWithDirection:direction];
+    [self configGradientWithColors:colors
+                         starPoint:[pointArray[0] CGPointValue]
+                          endPoint:[pointArray[1] CGPointValue]
+                         locations:locations];
+}
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               starPoint:(CGPoint)startPoint
+                endPoint:(CGPoint)endPoint
+{
+    [self configGradientWithColors:colors starPoint:startPoint endPoint:endPoint locations:@[]];
+}
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               starPoint:(CGPoint)startPoint
+                endPoint:(CGPoint)endPoint
+               locations:(NSArray <NSNumber *>*)locations
+{
+    [self configGradientWithColors:colors starPoint:startPoint endPoint:endPoint locations:locations];
+}
 
 - (void)configGradientWithColors:(NSArray <UIColor *>*)colors
                        starPoint:(CGPoint)startPoint
@@ -77,7 +124,6 @@
         return;
     }
     
-
     CAGradientLayer *layer = (CAGradientLayer *)self.layer;
     layer.colors = [EEGradientHelper gradientColorArrayWithColorArray:colors];
     layer.startPoint = startPoint;
