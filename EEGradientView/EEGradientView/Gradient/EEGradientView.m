@@ -9,8 +9,6 @@
 #import "EEGradientView.h"
 #import "EEGradientHelper.h"
 
-static NSString * const kProgressLayer = @"kProgressLayer";
-
 @interface UIView (Gradient)
 
 - (instancetype)initWithColors:(NSArray <UIColor *>*)colors
@@ -28,12 +26,6 @@ static NSString * const kProgressLayer = @"kProgressLayer";
                      starPoint:(CGPoint)startPoint
                       endPoint:(CGPoint)endPoint
                      locations:(NSArray <NSNumber *>*)locations;
-
-@end
-
-@interface UIView ()
-
-@property (setter=setYY_ProgressLayer:, getter=getYY_ProgressLayer, nonatomic, strong) CAGradientLayer *progressLayer;
 
 @end
 
@@ -101,15 +93,6 @@ static NSString * const kProgressLayer = @"kProgressLayer";
     return [CAGradientLayer class];
 }
 
-//- (void)setYY_ProgressLayer:(CAGradientLayer *)progressLayer
-//{
-//    objc_setAssociatedObject(self, &kProgressLayer, progressLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//}
-//
-//- (CAGradientLayer *)getYY_ProgressLayer
-//{
-//    return objc_getAssociatedObject(self, &kProgressLayer);
-//}
 @end
 
 @implementation EEGradientView

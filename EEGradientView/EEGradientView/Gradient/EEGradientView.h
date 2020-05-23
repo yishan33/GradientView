@@ -15,12 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @required
 
-//- (void)setProgressGradientColors:(NSArray *)colors
-//                       startPoint:(CGPoint)startPoint
-//                         endPoint:(CGPoint)endPoint;
-//
-//- (void)setProgressWidth:(CGFloat)width height:(CGFloat)height;
-
 - (instancetype)initWithColors:(NSArray <UIColor *>*)colors
                      direction:(EEGradientDirection)direction;
 
