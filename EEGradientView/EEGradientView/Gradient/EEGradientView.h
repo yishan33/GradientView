@@ -31,6 +31,22 @@ NS_ASSUME_NONNULL_BEGIN
                       endPoint:(CGPoint)endPoint
                      locations:(NSArray <NSNumber *>*)locations;
 
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               direction:(EEGradientDirection)direction;
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               direction:(EEGradientDirection)direction
+               locations:(NSArray <NSNumber *>*)locations;
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               starPoint:(CGPoint)startPoint
+                endPoint:(CGPoint)endPoint;
+
+- (void)updateWithColors:(NSArray <UIColor *>*)colors
+               starPoint:(CGPoint)startPoint
+                endPoint:(CGPoint)endPoint
+               locations:(NSArray <NSNumber *>*)locations;
+
 @end
 
 @interface  EEGradientView : UIView <EEGradientProtocol>

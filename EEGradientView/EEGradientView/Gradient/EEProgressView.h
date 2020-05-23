@@ -16,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) EEGradientView *foreGradientView;
 @property (nonatomic, assign) CGSize contentSize;
 @property (nonatomic, assign) CGFloat progress;
-@property (nonatomic, strong) UIColor *foreColor;
+@property (nonatomic, strong) UIView *forePureView;
+
 
 @end
 

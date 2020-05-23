@@ -40,6 +40,8 @@
     [bossView setTextGradientColors:gradientColorsArray direction:EEGradientDirectionRight];
     
     bossView.frame = CGRectMake(100, 100, 180, 50);
+    
+    [bossView updateWithColors:@[UIColor.yellowColor, UIColor.blueColor] direction:EEGradientDirectionUp];
 }
 
 //- (void)testGradient
